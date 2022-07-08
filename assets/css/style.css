@@ -135,4 +135,12 @@ a{
     width: 550px;
 }
 
+.membership{
+    margin: auto;
+    background-color: rgb(175, 224, 255);
+    width: 400px;
+    text-align: center;
+    border: 1px solid black;
+}
+
 /*---------------------------FOOTER--------------------------------------------*/

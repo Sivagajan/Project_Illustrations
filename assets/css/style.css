@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.navBar{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.headingPic{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pageSize{
+    height: 100vh;
+}
+
+.image{
+    height: 90vh;
+}

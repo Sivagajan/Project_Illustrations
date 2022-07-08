@@ -1,31 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300&family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+/* 
+    font-family: 'Lato', sans-serif;
+    font-family: 'Merriweather', serif;
+
+    #24bff2 button membership
+    #f5fbfe Border Color
+    #202020 Text
+    #fff    Background
+ */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #fff;
+    color: #202020;
 }
 
+.pageSize{
+    height: 90vh;
+}
+.pageExamples{
+    height: 200vh;
+}
+/*---------------------------HEADER--------------------------------------------*/
 header{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+/*     display: flex;
+    flex-direction: column; */
     background-color: #fff;
 }
 
 .navBar{
     display: flex;
     justify-content: flex-end;
+    border-bottom: 1px solid black; /* weg machen !!! */
+    line-height: 50px;
 }
 
+.navElement{
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+/*---------------------------MAIN----------------------------------------------*/
 .headingPic{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding-bottom:100px ;
 }
 
-.pageSize{
-    height: 100vh;
+.turnedElements{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom:100px ;
 }
+
+.textContainer{
+    width: 500px;
+    margin: 0 100px;
+}
+
+h2{
+    width: 500px;
+    font-family: 'Merriweather', serif;
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+p{
+    width: 450px;
+    font-size: 23px;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+a{
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* .blackbtn{
+    background-color: #202020;
+    color: #fff;
+}
+.whitebtn{
+    background-color:#f5fbfe;
+    color: #202020;
+    border: 1px solid black;
+    box-shadow: 2px 2px black;
+} */
 
 .image{
-    height: 90vh;
+    width: 35vw;
 }
+
+
+
+/*---------------------------FOOTER--------------------------------------------*/

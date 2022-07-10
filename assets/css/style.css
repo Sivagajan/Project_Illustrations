@@ -16,6 +16,7 @@
     box-sizing: border-box;
     background-color: #fff;
     color: #202020;
+    font-family: 'Merriweather', serif;
 }
 
 .pageSize{
@@ -23,7 +24,7 @@
     margin-bottom: 150px;
 }
 .pageExamples{
-    height: 180vh;
+    height: 200vh;
 }
 /*---------------------------HEADER--------------------------------------------*/
 header{
@@ -35,6 +36,7 @@ header{
 .navBar{
     display: flex;
     justify-content: flex-end;
+    margin-right: 10px;
     border-bottom: 1px solid black; /* weg machen !!! */
     line-height: 50px;
 }
@@ -42,15 +44,24 @@ header{
 .navElement{
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
-    padding-left: 20px;
+    padding-left: 40px;
     font-size: 18px;
+    list-style-type: none;
+    background-color: #fff;
 }
 
 /*---------------------------MAIN----------------------------------------------*/
-.headingPic{
+.firstHeadingPic{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left: 100px;
+}
+
+.headingPic{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .turnedElements{
@@ -66,44 +77,36 @@ header{
 
 h2{
     font-family: 'Merriweather', serif;
-    font-size: 50px;
-    margin: 20px 0;
-}
-
-.multipleHeading{
-    width: 500px;
-    font-family: 'Merriweather', serif;
-    font-size: 50px;
+    font-size: 45px;
     margin: 20px 0;
 }
 
 p{
-    font-size: 23px;
+
+    font-size: 20px;
     line-height: 30px;
     padding-bottom: 20px;
 }
 
-.Multipletext{
-    width: 490px;
-}
-
-a{
-    padding: 10px 15px;
-    font-size: 18px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
 .blackbtn{
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
     background-color: #202020;
     color: #fbf5fe;
 }
+
 .whitebtn{
-    border: 1px solid rgba(235,235,235);
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid #ebebeb;
     background-color:#fff;
     color: #202020;
     border: 1px solid #fbf5fe;
-    box-shadow: 2px 2px rgba(235,235,235);
+    box-shadow: 2px 2px #ebebeb;
 }
 
 .image{
@@ -112,8 +115,9 @@ a{
 
 .lastPages{
     text-align: center;
-    width: 800px;
-    margin: 100px auto;
+    width: 640px;
+    text-align: center;
+    margin: 30px auto;
 }
 
 .illupics{
@@ -129,18 +133,150 @@ a{
     justify-content: space-around;
 }
 
-.gallerypics
+.gallerypicsRight
 {
-    padding-bottom: 100px;
+    margin-bottom: 100px;
     width: 550px;
 }
 
-.membership{
-    margin: auto;
-    background-color: rgb(175, 224, 255);
-    width: 400px;
-    text-align: center;
-    border: 1px solid black;
+.gallerypicsRight:hover{
+    animation: bordererRight 3s infinite ;
+    animation-delay: 0s,20s;
 }
 
+.gallerypicsLeft
+{
+    margin-bottom: 100px;
+    width: 550px;
+}
+
+.gallerypicsLeft:hover{
+    animation: bordererLeft 3s infinite ;
+    animation-delay: 0s,20s;
+}
+
+li{
+    background-color: #eff9ff;
+    line-height: 25px;
+    font-size: 20px
+}
+
+.membership{
+    list-style-type: none;
+    margin: 50px auto;
+    background-color: rgb(239, 249, 255);
+    width: 300px;
+    text-align: center;
+    border: 1px solid rgb(239, 249, 255);
+    border-radius: 5px;
+}
+
+.fontsize40{
+    padding-top: 40px;
+    font-size: 25px;
+    line-height: 60px;
+}
+
+.fontsize60{
+    padding: 20px 0; 
+    font-size: 50px;
+    line-height: 80px;
+}
+
+.lightFont{
+    line-height: 50px;
+    color: #acacac;
+
+}
+
+li{
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.btnMember{
+    border: 1px solid #24bff2;
+    color: #fff;
+    background-color: #24bff2;
+    border-radius: 5px;
+    width: 200px;
+    padding: 10px 10px;
+    margin: 30px auto;
+    font-size: 16px;
+}
 /*---------------------------FOOTER--------------------------------------------*/
+
+footer{
+    text-align: center;
+}
+
+footer>p{
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.mail{
+    color: #acacac;
+}
+
+.socialMedia{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.socialMedia>p{
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.fb::before{
+    content: '.';
+    padding-right:5px;
+    font-size: 50px;
+    color: #346fc8;
+}
+
+.ig::before{
+    content: '.';
+    padding-right:5px;
+    font-size: 50px;
+    color: #c08a38;
+}
+
+.tw::before{
+    content: '.';
+    padding-right:5px;
+    font-size: 50px;
+    color: #07b8fe;
+}
+
+.yt::before{
+    content: '.';
+    padding-right:5px;
+    font-size: 50px;
+    color: #e72e2e;
+}
+/*---------------------------ANIMATIONS----------------------------------------*/
+
+@keyframes bordererRight {   
+    0%{
+        transform: translate(1,1);
+        border: 0px solid #acacac;
+    } 
+    100%{
+        transform: scale(2,2) translateX(-150px);
+        border: 0px solid #acacac;
+    }
+}
+
+@keyframes bordererLeft {   
+    0%{
+        transform: translate(1,1);
+        border: 0px solid #acacac;
+    } 
+    100%{
+        transform: scale(2,2) translateX(150px);
+        border: 0px solid #acacac;
+    }
+}
